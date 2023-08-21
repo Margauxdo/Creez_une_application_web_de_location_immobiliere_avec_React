@@ -1,13 +1,11 @@
 import React from 'react';
 
-
-const Erreur404 = () => {
+const Card = () => {
     return (
         <div>
             
-            <h1>Erreur 404</h1>
         </div>
     );
 };
 
-export default Erreur404;
+export default Card;
