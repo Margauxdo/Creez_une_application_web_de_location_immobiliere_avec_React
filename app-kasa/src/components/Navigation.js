@@ -7,14 +7,12 @@ const Navigation = () => {
         <div className='navigation'>
             <ul>
                 <NavLink to="/">
-                    <li>Accueil</li>
+                    <li>Accueil</li><div class="line"></div>
                 </NavLink>
                 <NavLink to="/APropos">
-                    <li>A propos</li>
+                    <li>A propos</li><div class="line"></div>
                 </NavLink>
-                <NavLink to="/FicheLogement">
-                    <li>Fiche logement</li>
-                </NavLink>
+                
                 
             </ul>
         </div>

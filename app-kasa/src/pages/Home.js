@@ -1,11 +1,17 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Logo from '../components/Logo';
+
 
 const Home = () => {
     return (
         <div>
-            <Navigation/>
-            <h1>Homepage</h1>
+            <div className='nav'>
+                <Logo/>
+                <Navigation/>
+            </div>
+                
+            
         </div>
     );
 };

@@ -1,6 +1,6 @@
-@import "./settings";
-@import "./components/navigation";
-@import"./components/logo";
-@import"./components/card";
-@import"./components/banner";
+@import "./_settings.css";
+@import "../components/banner.css";
+@import "../components/card.css";
+@import "../components/logo.css";
+@import "../components/naviguation.css";
 

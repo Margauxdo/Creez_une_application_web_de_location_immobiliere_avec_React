@@ -1,4 +1,49 @@
-li{
-    color: #FF6060;
+ul a{
+    text-decoration: none;
+    list-style-type: none;  
 }
-/*utiliser after pour souligner element du menu//
+li{
+    width:100%;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#FF6060;
+}
+ul{
+    width: 309px;
+    height: 34px;
+    display: flex;
+    position: absolute; 
+    top: 17px;
+    left: 931px;
+
+}
+
+.line {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Le trait commence avec une largeur de 0 */
+    height: 1px; /* Hauteur du trait */
+    background-color: #FF6060; /* Couleur du trait */
+    transition: width 0.3s ease, transform 4s ease; /* Transition pour l'effet d'apparition et de déplacement */
+    transform-origin: left; /* Point d'origine de la transformation (à gauche) */
+  }
+.navigation a {
+    text-decoration: none;
+    color: #FF6060; /* Couleur du texte */
+    padding: 5px 20px; /* Espacement autour des liens */
+    position: relative; /* Position relative pour aligner le trait par rapport à cet élément */
+  }
+
+  .navigation a.active .line {
+    width: 100%; /* Largeur maximale pour le trait */
+    transform: scaleX(1); /* Agrandir le trait de 0 à 1 (de gauche à droite) */
+    transform-origin: right; /* Point d'origine de la transformation (à droite) */
+  }
+
+  
+  

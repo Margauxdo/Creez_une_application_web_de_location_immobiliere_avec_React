@@ -1,13 +1,19 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Logo from '../components/Logo';
+
 
 const APropos = () => {
     return (
         <div>
-          
-            <Navigation/>
-           <h1> A Propos</h1> 
+            <div className='nav'>
+                <Logo/>
+                <Navigation/>
+            </div>
+                <h1> A Propos</h1> 
+
         </div>
+        
     );
 };
 

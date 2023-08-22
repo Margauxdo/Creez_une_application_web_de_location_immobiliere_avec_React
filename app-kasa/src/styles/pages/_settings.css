@@ -1,5 +1,14 @@
-/*lien couleur/lien police/ margin/paddi,g(video 46mm33*//
-* {
-    font-family: Montserrat;
-    src: url(../asset/font/static/Montserrat-Black.ttf);
+*{
+    box-sizing: border-box;
+    color:#FF6060;
+    
 }
+.nav{
+    width:1240px;
+    height: 68px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+

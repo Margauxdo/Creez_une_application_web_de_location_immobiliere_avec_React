@@ -1,12 +1,17 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+
+import Logo from '../components/Logo';
+
 
 const FicheLogement = () => {
     return (
-        <div>
+        <div >
+            <div className='nav'>
+                <Logo/>
+            </div>
             
-            <Navigation/>
-            <h1>Fiche Logement</h1>
+                <h1>Fiche Logement</h1>
+                
         </div>
     );
 };
