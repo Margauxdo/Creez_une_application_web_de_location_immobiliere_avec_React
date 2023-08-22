@@ -10,5 +10,15 @@
     top: 40px;
     left: 100px;
 }
+@media screen and (max-width: 375px){
+    .nav{
+        width: 335px;
+        height: 47px;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+
 
 

@@ -1,0 +1,16 @@
+.logofooter img{
+    width: 122px;
+    height: 39.444419860839844px;
+    position: relative;
+    top: 66px;
+
+}
+
+@media screen and (max-width: 375px){
+    .logofooter img{
+        width: 122px;
+        height: 39.444419860839844px;
+        position: relative;
+        top: 66px;
+    }
+}

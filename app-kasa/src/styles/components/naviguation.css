@@ -1,8 +1,8 @@
-ul a{
+.navigation a{
     text-decoration: none;
     list-style-type: none;  
 }
-li{
+.navigation li{
     width:100%;
     font-family: Montserrat;
     font-size: 24px;
@@ -12,7 +12,7 @@ li{
     text-align: center;
     color:#FF6060;
 }
-ul{
+.navigation ul{
     width: 309px;
     height: 34px;
     display: flex;
@@ -43,6 +43,29 @@ ul{
     width: 100%; /* Largeur maximale pour le trait */
     transform: scaleX(1); /* Agrandir le trait de 0 à 1 (de gauche à droite) */
     transform-origin: right; /* Point d'origine de la transformation (à droite) */
+  }
+
+
+
+
+  @media screen and (max-width: 375px){
+    .navigation ul{
+    height: 17px;
+    top: 0px;
+    left: 125px;
+
+    }
+    .navigation li{
+        font-size: 12px;
+        line-height: 17px;
+        text-align: right;
+    }
+    .navigation a{      
+        font-size: 12px;
+        line-height: 17px;
+        text-align: right;
+
+    }
   }
 
   

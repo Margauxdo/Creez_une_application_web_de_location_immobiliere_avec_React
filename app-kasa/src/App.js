@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import Erreur404 from "./pages/Erreur404";
 import APropos from "./pages/APropos";
 import './styles/components/naviguation.css';
+import Footer from "./components/Footer";
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,6 +16,8 @@ const App = () => {
         {/*path='*'fonctionne si url ne correspondt a aucun chemin déclaré*/}
         <Route path='*' element={<Erreur404 />} />
       </Routes>
+
+      <Footer/>
     </BrowserRouter>
     
   );

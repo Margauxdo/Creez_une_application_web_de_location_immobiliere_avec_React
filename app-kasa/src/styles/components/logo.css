@@ -2,3 +2,11 @@
     width: 210.32154846191406px;
     height: 68px;
 }
+
+@media screen and (max-width: 375px){
+    .logo img{
+        width: 145px;
+        height: 47px;
+
+    }
+}

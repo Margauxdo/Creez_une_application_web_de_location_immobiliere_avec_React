@@ -1,0 +1,43 @@
+.footer {
+    background-color: #000;  
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; /* Aligner le bas du footer en bas de la page */
+    left: 0; 
+    width: 1440px;
+  }
+  .container-footer p{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#fff;
+    width: 513px;
+    height: 46px;
+    position: relative;
+    top: 134px;
+    left: 464px;
+    margin-bottom: 134px;
+  }
+  
+
+  @media screen and (max-width: 375px) {
+    .container-footer p{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 513px;
+        height: 46px;
+        top: 101px;
+        left: -69px;
+    }
+    .footer{
+        width: 375px;
+    }
+
+  }
