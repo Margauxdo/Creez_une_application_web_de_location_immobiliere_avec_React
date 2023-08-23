@@ -1,10 +1,84 @@
-
-
-
-
+.banner img{
+  max-width: 1240px;
+  width: 100%;
+    height: 223px;
+    object-fit: cover;
+    position: absolute;
+    left: 100px;
+    top:171px;
+    border-radius: 25px;
+}
+.titlebanner {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  max-width: 705px;
+  top: 160px;
+  left: 403px;
+  position: relative;
+  z-index: 1;
+}
+.banner{
+    width: 80%;
+    max-width: 1240px;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    max-width: 1240px;
+    width: 100%;
+    height: 223px;
+    left: 100px;
+    top: 171px;
+    background-blend-mode: darken;
+    filter: brightness(0.7);
+    background: linear-gradient(to right, #000000, #555555);
+    opacity: 30%;
+    border-radius: 25px;
+}
 
 
 
 @media screen and (max-width: 375px){
+  .banner img{
+    width: 100%;
+    max-width: 340px;
+    height: 111px;
+    object-fit: cover;
+    top: 213px;
+    left: 125px;
+  } 
+  .banner{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    right: 100px;
+    bottom: 180px;
+  }
+  .banner::after{
+    width: 100%;
+    height: auto;
+    right: 100px;
+    bottom: 180px;
+  } 
+  .titlebanner{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 217px;
+    height: 48px;
+    top: 233px;
+    left: 122px;
+  }
+  
     
 }

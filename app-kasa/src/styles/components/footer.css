@@ -4,6 +4,9 @@
     position: fixed; 
     bottom: 0; /* Aligner le bas du footer en bas de la page */
     left: 0; 
+    width: 100%;
+  }
+  .nav{
     width: 1440px;
   }
   .container-footer p{
@@ -14,11 +17,11 @@
     letter-spacing: 0em;
     text-align: center;
     color:#fff;
-    width: 513px;
-    height: 46px;
+    width: 100%;
+    height: auto;
     position: relative;
     top: 134px;
-    left: 464px;
+    left: 50px;
     margin-bottom: 134px;
   }
   
@@ -30,14 +33,17 @@
         font-weight: 500;
         line-height: 17px;
         letter-spacing: 0em;
-        text-align: center;
-        width: 513px;
-        height: 46px;
+        text-align: right;
+        width: 100%;
+        height: auto;
         top: 101px;
-        left: -69px;
+        left: -100px;
     }
-    .footer{
+    .container-footer{
         width: 375px;
     }
-
+    .nav{
+      max-width: 100%;
+    }
+   
   }

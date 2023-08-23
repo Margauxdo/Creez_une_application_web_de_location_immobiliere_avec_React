@@ -1,11 +1,13 @@
 import React from 'react';
+import '../styles/components/banner.css';
 
-const banner = () => {
+const Banner = () => {
     return (
-        <div>
-            
+        <div className='banner'>
+        <img src='./IMG-HOME.png' alt='banner' />
+        <h1 className='titlebanner'>Chez vous, partout et ailleurs</h1>
         </div>
     );
 };
 
-export default banner;
+export default Banner;

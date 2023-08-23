@@ -1,12 +1,19 @@
 .logo img{
     width: 210.32154846191406px;
-    height: 68px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left:100px;
 }
 
 @media screen and (max-width: 375px){
     .logo img{
-        width: 145px;
-        height: 47px;
+        max-width: 145px;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
 
     }
 }

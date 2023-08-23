@@ -3,20 +3,9 @@
     color:#FF6060;
     
 }
-.nav{
-    width:1240px;
-    height: 68px;
-    position: absolute;
-    top: 40px;
-    left: 100px;
-}
+
 @media screen and (max-width: 375px){
-    .nav{
-        width: 335px;
-        height: 47px;
-        top: 20px;
-        left: 20px;
-    }
+   
 }
 
 
