@@ -1,12 +1,102 @@
+/* Styles pour les écrans plus larges */
+.logement-card {
+    width: 340px;
+    height: 340px;
+    margin: 56px 0px;
+    position: relative;
+    right: 50px;
+}
 
+.logement-card::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+    border-radius: 10px;
+}
 
+.logement-card img {
+    width: 340px;
+    height: 340px;
+    margin: 56px;
+    z-index: 0;
+    border-radius: 10px;
+}
 
+.list-logement {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    width: 100%;
+    background-color: #F6F6F6;
+    height: auto;
+    border-radius: 25px;
+    position: relative;
+    top: 300px;
+    left: 90px;
+    justify-content: space-evenly;
+}
 
+.logement-card h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    top: 350px;
+    width: 300px;
+    left: 66px;
+    color: #fff;
+    z-index: 2;
+}
 
+/* Styles pour les écrans plus étroits */
+@media screen and (max-width: 375px) {
+    .logement-card {
+        width: 100%;
+    margin: 20px 0;
+    right: 90px;
+    bottom: 200px;
+    }
 
+    .logement-card::before {
+        position: absolute;
+        width: 100%;
+        max-width: 335px;
+        height: 255px;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+    }
 
+    .logement-card img {
+        width: 100%;
+    max-width: 335px;
+    height: 255px;
+    margin: auto;
+    object-fit: cover;
+    }
 
+    .logement-card h2 {
+        width: 100%;
+        max-width: 335px;
+        height: 235px;
+        z-index: 0;
+    }
 
-@media screen and (max-width: 375px){
-    
+    /* Empêcher la barre de défilement verticale */
+    body {
+        overflow-x: hidden;
+    }
+    .list-logement{
+        background-color: none;
+    width: 100%;
+    max-width: 375px;
+    }
 }

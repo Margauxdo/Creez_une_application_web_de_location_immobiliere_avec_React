@@ -55,10 +55,9 @@
     left: 125px;
   } 
   .banner{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     position: relative;
-    right: 100px;
+    right: 125px;
     bottom: 180px;
   }
   .banner::after{

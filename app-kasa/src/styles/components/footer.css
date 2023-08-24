@@ -5,10 +5,9 @@
     bottom: 0; /* Aligner le bas du footer en bas de la page */
     left: 0; 
     width: 100%;
+    max-width: 1440px;
   }
-  .nav{
-    width: 1440px;
-  }
+
   .container-footer p{
     font-family: Montserrat;
     font-size: 24px;
@@ -43,7 +42,8 @@
         width: 375px;
     }
     .nav{
-      max-width: 100%;
+      max-width: 375px;
+      width:100%;
     }
    
   }
