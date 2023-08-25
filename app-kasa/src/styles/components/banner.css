@@ -1,83 +1,74 @@
 .banner img{
-  max-width: 1240px;
-  width: 100%;
-    height: 223px;
-    object-fit: cover;
-    position: absolute;
-    left: 100px;
-    top:171px;
-    border-radius: 25px;
+  width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  margin-top: 131px;
+  margin-left: 100px;
+  border-radius: 25px;
+  background-blend-mode: darken;
+  filter: brightness(70%);
+  z-index: 0;
+  position: relative;
 }
-.titlebanner {
+.titlebanner{
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 500;
   line-height: 68px;
   letter-spacing: 0em;
   text-align: left;
+  position: absolute;
   color: #fff;
-  width: 100%;
-  max-width: 705px;
-  top: 160px;
-  left: 403px;
-  position: relative;
-  z-index: 1;
+  z-index: 2;
+  top: 185px;
+  text-align: center;
 }
 .banner{
-    width: 80%;
-    max-width: 1240px;
+  position: relative;
+ 
 }
-.banner::after{
-    content: "";
-    position: absolute;
-    z-index: 0;
-    max-width: 1240px;
-    width: 100%;
-    height: 223px;
-    left: 100px;
-    top: 171px;
-    background-blend-mode: darken;
-    filter: brightness(0.7);
-    background: linear-gradient(to right, #000000, #555555);
-    opacity: 30%;
-    border-radius: 25px;
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 223px;
+  background: linear-gradient( rgb(0 0 0 / 0%), rgb(0 0 0 / 15%));
+  z-index: 1;
+  margin-left: 100px;
+  margin-top: 131px;
+  border-radius: 25px;
 }
-
 
 
 @media screen and (max-width: 375px){
   .banner img{
+    max-width: 335px;
     width: 100%;
-    max-width: 340px;
     height: 111px;
-    object-fit: cover;
-    top: 213px;
-    left: 125px;
-  } 
-  .banner{
-    width: 100%;
-    position: relative;
-    right: 125px;
-    bottom: 180px;
+    margin-left: 0px;
+    margin-top: 83px;
+    border-radius: 10px;
   }
   .banner::after{
-    width: 100%;
-    height: auto;
-    right: 100px;
-    bottom: 180px;
-  } 
+    width: 335px;
+    height: 111px;
+    margin-left: 0px;
+    margin-top: 83px;
+    border-radius: 10px;
+  }
   .titlebanner{
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     width: 217px;
     height: 48px;
-    top: 233px;
-    left: 122px;
+    top: 114px;
+    left: 36px;
   }
-  
     
 }

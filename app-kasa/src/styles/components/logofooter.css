@@ -1,16 +1,15 @@
 .logofooter img{
     width: 122px;
-    height: 39.444419860839844px;
-    position: absolute;
-    top: 66px;
-
+    height: 39.4px;
+}
+.logofooter{
+    padding-top: 66px;
+    padding-left: 659px;
 }
 
 @media screen and (max-width: 375px){
-    .logofooter img{
-        width: 122px;
-        height: 39.444419860839844px;
-        position: relative;
-        top: 66px;
+    .logofooter{
+        padding-top: 62px;
+        padding-left: 127px;
     }
 }
