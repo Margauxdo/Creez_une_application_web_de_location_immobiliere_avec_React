@@ -14,6 +14,7 @@
     height: 340px;
     border-radius: 10px;
     z-index: 0;
+    object-fit: cover;
 }
 .logement-card h2{
     font-family: Montserrat;
@@ -42,15 +43,19 @@
     padding-bottom: 56px;
     z-index: 0;
 }
-.logement-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 10px;
+.logement-card::before { 
+    content: ""; 
+    position : absolute ; 
+    top : 0 ; 
+    left : 0 ; 
+    right : 100% ;
+    width: 100%;
+    max-width: 340px;
+    height: 340px;
+    background: Linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     z-index: 1;
-  }
+    border-radius: 10px;
+}
 
 /* Styles pour les écrans plus étroits */
 @media screen and (max-width: 375px) {
@@ -78,5 +83,10 @@
         width: 295px;
         
       }  
+      .logement-card::before{
+        width: 335px;
+        height: 255px;
+        left:3px
+      }
     
 }

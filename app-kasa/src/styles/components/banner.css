@@ -2,7 +2,6 @@
   width: 1240px;
   height: 223px;
   object-fit: cover;
-  margin-top: 131px;
   margin-left: 100px;
   border-radius: 25px;
   background-blend-mode: darken;
@@ -12,16 +11,17 @@
 }
 .titlebanner{
   font-family: Montserrat;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 68px;
-  letter-spacing: 0em;
-  text-align: left;
-  position: absolute;
-  color: #fff;
-  z-index: 2;
-  top: 185px;
-  text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    bottom: 189px;
+    width: 705px;
+    left: 373px;
 }
 .banner{
   position: relative;
@@ -37,8 +37,12 @@
   background: linear-gradient( rgb(0 0 0 / 0%), rgb(0 0 0 / 15%));
   z-index: 1;
   margin-left: 100px;
-  margin-top: 131px;
   border-radius: 25px;
+}
+.banner-home{
+  height: 223px;
+  position: relative;
+  margin-top: 98px;
 }
 
 
@@ -67,8 +71,11 @@
     text-align: left;
     width: 217px;
     height: 48px;
-    top: 114px;
+    bottom: 100px;
     left: 36px;
+  }
+  .banner-home{
+    margin-top: 0px;
   }
     
 }

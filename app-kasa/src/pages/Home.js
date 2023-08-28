@@ -16,10 +16,10 @@ const Home = () => {
                 <Navigation/>
 
             </div>
-            <div class="banner-home">
+            <div className="banner-home">
                <Banner/>
             </div>
-            <div class="card-logements">
+            <div className="card-logements">
                 <Card/>
             </div>
                 

@@ -1,0 +1,14 @@
+
+
+.Img-banner img{
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+.img-apropos{
+    margin-left: 100px;
+    margin-top: 98px;
+}
