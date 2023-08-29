@@ -6,9 +6,21 @@
     max-width: 1240px;
     object-fit: cover;
     border-radius: 25px;
+    background-blend-mode: darken;
+    filter: brightness(70%);
 
 }
 .img-apropos{
     margin-left: 100px;
     margin-top: 98px;
+}
+@media screen and (max-width: 375px){
+.img-apropos{
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.Img-banner img{
+    max-width: 336px;
+    height: 223px;
+}
 }
