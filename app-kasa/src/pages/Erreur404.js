@@ -3,6 +3,7 @@ import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
 import LogoFooter from '../components/LogoFooter';
 import { Link } from 'react-router-dom';
+import '../styles/components/erreur404.css';
 
 
 
@@ -14,9 +15,15 @@ const Erreur404 = () => {
                 <Navigation/>
             </div>
             <div className='container-404'>
-                <h1 className='title-404'>Erreur 404</h1>
-                <p className='texte-404'>Oups! La page que vous demandez n'existe pas.</p>  
+                <div className='title404'>
+                <h1>404</h1>
+                </div>
+                <div className='text404'>
+                <p>Oups! La page que vous demandez n'existe pas.</p>  
+                </div>
+                <div className='returnHome'>
                 <Link to='/'>Retourner sur la page d'accueil</Link>
+                </div >
             </div>
                <LogoFooter/>
         </div>

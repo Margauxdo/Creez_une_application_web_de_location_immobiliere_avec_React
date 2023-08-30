@@ -24,8 +24,7 @@
     left: 373px;
 }
 .banner{
-  position: relative;
- 
+  position: relative; 
 }
 .banner::after {
   content: "";
@@ -52,30 +51,27 @@
     width: 100%;
     height: 111px;
     margin-left: 0px;
-    margin-top: 83px;
+    margin-top: -20px;
     border-radius: 10px;
   }
   .banner::after{
     width: 335px;
     height: 111px;
     margin-left: 0px;
-    margin-top: 83px;
+    margin-top: -20px;
     border-radius: 10px;
   }
   .titlebanner{
-    font-family: Montserrat;
     font-size: 24px;
-    font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
     width: 217px;
     height: 48px;
     bottom: 100px;
     left: 36px;
   }
   .banner-home{
-    margin-top: 0px;
+    width: 335px;
+    height: 111px;
   }
     
 }

@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: url('./font/static/Montserrat-Regular.ttf') format('truetype'); 
+  }
 *{
     box-sizing: border-box;
     color:#FF6060;

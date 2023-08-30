@@ -1,0 +1,83 @@
+.title404 h1{
+font-family: Montserrat;
+font-size: 288px;
+font-weight: 700;
+line-height: 411px;
+letter-spacing: 0em;
+text-align: center;
+margin-top:173px;
+}
+.title404{
+    max-width: 597px;
+    height: 263px;
+    margin-left: 432px;
+}
+.text404 p{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text404{
+    width: 100%;
+    max-width: 872px;
+    height: 51px;
+    margin-left: 295px;
+    margin-top: 120px;
+}
+.returnHome a{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.returnHome{
+    width:100%;
+    max-width: 284px;
+    height:26px;
+    margin-left: 578px;
+    margin-top:209px;
+}
+
+
+@media screen and (max-width: 375px){
+    .title404 h1{
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 137px;
+        max-width: 198px;
+        height: 99px;
+    }
+    .title404{
+        margin-left: 88px;
+        margin-top: 262px;
+    }
+    .text404 p{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        max-width: 260px;
+        height:52px;
+        position: absolute;
+        top: 427px;
+        left: 90px;
+    }
+    .returnHome a{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .returnHome{
+        margin-left: 76px;
+       position: absolute;
+       top:400px
+    }
+    
+}

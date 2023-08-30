@@ -17,8 +17,8 @@
     object-fit: cover;
 }
 .logement-card h2{
-    font-family: Montserrat;
     font-size: 18px;
+    font-family: Montserrat;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
@@ -63,13 +63,13 @@
     width: 335px;
     margin-left: 0px;
     background: none;
-    margin-top: 16px;
+    margin-top: 0px;
     }
     .card-logements img{
         border-radius: 10px;
-    width: 335px;
-    height: 255px;
-    object-fit: cover;
+        width: 335px;
+        height: 255px;
+        object-fit: cover;
     }
     .logement-card{
         margin-top: 0px;
@@ -77,7 +77,7 @@
         margin-bottom: 26px;
     }
       
-      .logement-card h2{
+    .logement-card h2{
         margin-top: 188px;
         margin-left: 19.7px;
         width: 295px;
