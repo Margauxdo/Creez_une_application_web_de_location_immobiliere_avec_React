@@ -43,6 +43,22 @@
     padding-top: 30px;
     padding-bottom: 15px;
 }
+.collapse-chevron {
+    
+    color: #ffffff;
+    font-size:32px;
+    
+}
+
+.collapse-chevron.up::before {
+    content: '\f077'; /* Code de l'icône FontAwesome pour le chevron vers le haut */
+    font-family: 'Font Awesome 5 Free'; 
+}
+
+.collapse-chevron.down::before {
+    content: '\f078'; /* Code de l'icône FontAwesome pour le chevron vers le bas */
+}
+
 
 @media screen and (max-width: 375px){
     .collapse-button{

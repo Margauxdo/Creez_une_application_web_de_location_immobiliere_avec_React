@@ -1,9 +1,12 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import LogoFooter from '../components/LogoFooter';
 import logementsData from '../logements.json';
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import LogoFooter from '../components/LogoFooter';
+import Logo from '../components/Logo';
+import '../styles/components/fichelogement.css';
+import Collapse from '../components/Collapse';
+import Slideshow from '../components/Slideshow'; // Importez votre composant Slideshow
 
 const FicheLogement = () => {
   const { id } = useParams(); // Utilisez useParams pour obtenir l'ID depuis les paramètres d'URL
@@ -38,33 +41,49 @@ const FicheLogement = () => {
         <Navigation />
       </div>
       <div className='container-logement'>
-        <h1>{logement.title}</h1>
-        <img src={logement.cover} alt={logement.title} />
-        <p className='description'>{logement.description}</p>
-      </div>
-      <div className='host-details'>
-        <h2>Hôte : {logement.host.name}</h2>
-        <img src={logement.host.picture} alt={logement.host.name} />
-      </div>
-      <div className='rating-location'>
-        <p>Évaluation : {logement.rating}</p>
-        <p>Emplacement : {logement.location}</p>
-      </div>
-      <div className='equipments'>
-        <h2>Équipements :</h2>
-        <ul>
-          {logement.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-      </div>
-      <div className='tags'>
-        <h2>Tags :</h2>
-        <ul>
-          {logement.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
+        <div className='entete'>
+         {/*} <img src={logement.cover} alt={logement.title} />*/}
+         
+        <Slideshow images={logement.pictures} />
+        </div>
+
+        
+
+        {/* Le reste de votre code reste inchangé */}
+        <div className="top-right">
+          <div className='localisation'>
+            <h1>{logement.title}</h1>
+            <p>{logement.location}</p>
+            <div className='tags'>
+              <ul>
+                {logement.tags.map((tag, index) => (
+                  <li key={index}>{tag}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className='hote-heart'>
+            <div className='host-details'>
+              <h2> {logement.host.name}</h2>
+              <img src={logement.host.picture} alt={logement.host.name} />
+            </div>
+            <div className='rating-location'>
+              <p>Évaluation : {logement.rating}</p>
+            </div>
+          </div>
+        </div>
+        <div className='collapse-body'>
+          <Collapse className="description" title="Description">
+            {logement.description}
+          </Collapse>
+          <Collapse className="equipement" title='Equipements' >
+            <ul>
+              {logement.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </Collapse>
+        </div>
       </div>
       <LogoFooter />
     </div>
@@ -72,3 +91,4 @@ const FicheLogement = () => {
 }
 
 export default FicheLogement;
+

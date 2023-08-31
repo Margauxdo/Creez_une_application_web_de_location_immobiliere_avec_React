@@ -1,0 +1,156 @@
+.container-logement img{
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+.entete{
+    margin-top: 128px;
+}
+.localisation h1{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    width:635px;
+    height:51px;
+
+}
+.localisation p{
+    height:26px;
+    font-weight: 500;
+
+}
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.localisation{
+    width: 635px;
+    height: 77px;
+    margin-left: 100px;
+
+}
+.host-details{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 605px;
+}
+.host-details h2{
+    max-width: 93px;
+    width:100%;
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+.host-details img{
+    width:100%;
+    max-width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.top-right{
+    display:flex;
+    width:100%;
+    max-width:1240px;
+}
+.hote-heart{
+    max-width: 605px;
+    width: 100%;
+}
+
+.rating-location{
+    max-width: 605px;
+    width:100%;
+}
+.rating-location p{
+    display: flex;
+    justify-content: flex-end;
+}
+.tags li{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 25px;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    width:150px;
+    margin: 0px 15px 0px 0px;
+}
+.tags ul{
+    list-style-type: none;
+    display: flex;
+}
+.tags{
+    width: 1240px;
+    position: absolute;
+    left: 70px
+}
+.collapse-body {
+    display: flex;
+}
+.collapse-content{
+    margin-left: 100px;
+    height: 249px;
+}
+.collapse-body .collapse{
+    margin: 50px 140px 0px 0px;
+    width: 538px;
+}
+.collapse .collapse-button{
+    margin-left: 100px;
+    padding-left: 10px;
+}
+.collapse-content ul{
+    list-style-type: none;
+}
+.collapse-content li{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.collapse .collapse-content{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* Assurez-vous que le conteneur des images a une position relative */
+.thumbs-wrapper {
+    position: absolute;
+ 
+  }
+  .thumbs-wrapper li{
+    border: 0.1px solid hsl(0deg 0% 100% / 0%);
+  }
+  .carousel .thumbs-wrapper{
+    visibility: hidden;
+  }
+  .carousel .thumbs{
+    display:none;
+  }
+  .carousel-root{
+    width: 1240px;
+    margin-left: 100px;
+  }
+  

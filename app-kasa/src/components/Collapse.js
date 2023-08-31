@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/components/collapse.css';
+import '../asset/fontawesome-free-6.4.2-web/css/all.css';
 
 const Collapse = ({title, children}) => {
     const [isOpen, setIsOpen] = useState(false);
