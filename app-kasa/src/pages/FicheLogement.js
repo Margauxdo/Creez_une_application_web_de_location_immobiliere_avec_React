@@ -7,6 +7,8 @@ import Logo from '../components/Logo';
 import '../styles/components/fichelogement.css';
 import Collapse from '../components/Collapse';
 import Slideshow from '../components/Slideshow'; // Importez votre composant Slideshow
+import ChevronDownUp from '../components/ChevronDownUp';
+import RatingLocation from '../components/RatingLocation';
 
 const FicheLogement = () => {
   const { id } = useParams(); // Utilisez useParams pour obtenir l'ID depuis les paramètres d'URL
@@ -68,15 +70,17 @@ const FicheLogement = () => {
               <img src={logement.host.picture} alt={logement.host.name} />
             </div>
             <div className='rating-location'>
-              <p>Évaluation : {logement.rating}</p>
+            <RatingLocation rating={logement.rating}/>
             </div>
           </div>
         </div>
         <div className='collapse-body'>
           <Collapse className="description" title="Description">
+            <ChevronDownUp/>
             {logement.description}
           </Collapse>
           <Collapse className="equipement" title='Equipements' >
+            <ChevronDownUp/>
             <ul>
               {logement.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>

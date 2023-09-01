@@ -22,7 +22,7 @@
 .localisation p{
     height:26px;
     font-weight: 500;
-
+    margin-top: 50px;
 }
 p{
     font-family: Montserrat;
@@ -53,6 +53,8 @@ p{
     line-height: 26px;
     letter-spacing: 0em;
     text-align: right;
+    position: relative;
+    left: 90px;
 }
 .host-details img{
     width:100%;
@@ -103,6 +105,7 @@ p{
 }
 .collapse-body {
     display: flex;
+    margin-top: 80px;
 }
 .collapse-content{
     margin-left: 100px;
@@ -111,6 +114,7 @@ p{
 .collapse-body .collapse{
     margin: 50px 140px 0px 0px;
     width: 538px;
+    height: 250px;
 }
 .collapse .collapse-button{
     margin-left: 100px;
@@ -152,5 +156,11 @@ p{
   .carousel-root{
     width: 1240px;
     margin-left: 100px;
+  }
+  .collapse-button .downup img{
+    transform: rotate(180deg);
+    width: 32px;
+    height: 32px;
+    margin-left: 0px;
   }
   
