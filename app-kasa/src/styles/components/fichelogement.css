@@ -163,4 +163,83 @@ p{
     height: 32px;
     margin-left: 0px;
   }
+
+  @media screen and (max-width: 375px){
+    .localisation{
+        width: 335px;
+        margin: 0px;
+    }
+    .top-right{
+        flex-direction: column;
+        width: 100%;
+        max-width: 335px;
+        height: 515px;
+    }
+    .localisation h1{
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    width:335px;
+    height:46px;
+    }
+    .localisation p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    width:323px;
+    height:22px;
+    margin-top:25px;
+    }
+    .tags{
+        position: relative;
+        width: 335px;
+    }
+    .tags li{
+        font-size: 10px;
+    line-height: 11px;
+    }
+    .tags ul{
+        width: 335px;
+        position: relative;
+        margin-left: 20px;
+        right: 130px;
+    }
+    .hote-heart{
+        width: 335px;
+        margin-left: 0px;
+        display: flex;
+        margin-top: 90px;
+        flex-direction: row-reverse;
+        height: 33px;
+    }
+    .host-details img{
+        width: 32px;
+        height: 32px;
+    }
+    .host-details h2{
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+    padding-top: 10px;
+    }
+    .host-details{
+        width: 135px;
+        height: 33px;
+    }
+    .collapse-body{
+        width: 335px;
+        margin-left: 0px;
+        position: relative;
+        bottom: 420px;
+        flex-direction: column;
+    }
+    .collapse-body .collapse{
+        width: 335px;
+    }
+    .collapse .collapse-content{
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    }
+  }
   

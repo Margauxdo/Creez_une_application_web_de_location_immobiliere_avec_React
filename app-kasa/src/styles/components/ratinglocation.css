@@ -3,3 +3,18 @@
     display: flex;
     float: right;
 }
+
+
+@media screen and (max-width: 375px){
+    .rating-location{
+        width: 100%;
+        max-width: 98px;
+        height: 18px;
+        position: relative;
+        right: 50px;
+    }
+    .rating-location svg{
+        width:18px;
+        height:18px;
+    }
+}
