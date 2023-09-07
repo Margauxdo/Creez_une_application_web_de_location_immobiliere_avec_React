@@ -81,7 +81,7 @@ const FicheLogement = () => {
           </Collapse>
           <Collapse className="equipement" title='Equipements' >
             <ChevronDownUp/>
-            <ul>
+            <ul className='list-equipement'>
               {logement.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}

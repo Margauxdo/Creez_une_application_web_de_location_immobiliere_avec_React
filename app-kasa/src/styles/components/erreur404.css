@@ -6,11 +6,14 @@ line-height: 411px;
 letter-spacing: 0em;
 text-align: center;
 margin-top:173px;
+max-width: 1440px;
+width: 100%;
 }
 .title404{
     max-width: 597px;
     height: 263px;
     margin-left: 432px;
+    width:100%;
 }
 .text404 p{
     font-family: Montserrat;
@@ -34,6 +37,7 @@ margin-top:173px;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    max-width: 284px;
 }
 .returnHome{
     width:100%;
@@ -49,12 +53,20 @@ margin-top:173px;
         font-size: 96px;
         font-weight: 700;
         line-height: 137px;
-        max-width: 198px;
+        max-width: 374px;
+        width: 100%;
         height: 99px;
+        text-align: center;
     }
     .title404{
-        margin-left: 88px;
+        margin-left: 0px;
         margin-top: 262px;
+        width: 100%;
+        max-width: 375px;
+    }
+    .text404{
+        max-width: 375px;
+        width: 100%;
     }
     .text404 p{
         font-family: Montserrat;
@@ -62,22 +74,27 @@ margin-top:173px;
         font-weight: 500;
         line-height: 26px;
         max-width: 260px;
+        width:100%;
         height:52px;
         position: absolute;
         top: 427px;
-        left: 90px;
+        left: 80px;
+        margin-top: 30px;
     }
     .returnHome a{
         font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
     }
     .returnHome{
-        margin-left: 76px;
-       position: absolute;
-       top:400px
+        margin-left: 0px;
+        position: absolute;
+        top: 430px;
+        width: 100%;
+        max-width: 375px;
+        left: 75px;
     }
     
 }

@@ -1,3 +1,4 @@
+import '../pages/FicheLogement';
 import React from 'react';
 import '../styles/components/ratinglocation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

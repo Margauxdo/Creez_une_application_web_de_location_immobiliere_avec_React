@@ -1,13 +1,17 @@
 .container-logement img{
     width: 100%;
     max-width: 1240px;
-    height: 415px;
     object-fit: cover;
-    margin-left: 100px;
 }
-.entete{
-    margin-top: 128px;
-}
+.pagination {
+    
+   
+    font-variant-numeric: tabular-nums; /* Utilise la numérotation tabulaire */
+        font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
+        color: #fff; /* Couleur du texte de la numérotation */
+        text-align: center;
+        margin-top: 10px; /* Marge supérieure pour espacement */
+    }
 .localisation h1{
     font-family: Montserrat;
     font-size: 36px;
@@ -40,8 +44,9 @@ p{
 .host-details{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     width: 605px;
+    flex-direction: unset;
+    justify-content: flex-end;
 }
 .host-details h2{
     max-width: 93px;
@@ -53,8 +58,7 @@ p{
     line-height: 26px;
     letter-spacing: 0em;
     text-align: right;
-    position: relative;
-    left: 90px;
+    margin-right: 10px;
 }
 .host-details img{
     width:100%;
@@ -103,143 +107,89 @@ p{
     position: absolute;
     left: 70px
 }
-.collapse-body {
-    display: flex;
-    margin-top: 80px;
+.container-logement{
+    margin-top: 60px;
 }
-.collapse-content{
-    margin-left: 100px;
-    height: 249px;
-}
-.collapse-body .collapse{
-    margin: 50px 140px 0px 0px;
-    width: 538px;
-    height: 250px;
-}
-.collapse .collapse-button{
-    margin-left: 100px;
-    padding-left: 10px;
-}
-.collapse-content ul{
-    list-style-type: none;
-}
-.collapse-content li{
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.collapse .collapse-content{
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-/* Assurez-vous que le conteneur des images a une position relative */
-.thumbs-wrapper {
-    position: absolute;
- 
-  }
-  .thumbs-wrapper li{
-    border: 0.1px solid hsl(0deg 0% 100% / 0%);
-  }
-  .carousel .thumbs-wrapper{
-    visibility: hidden;
-  }
-  .carousel .thumbs{
-    display:none;
-  }
-  .carousel-root{
-    width: 1240px;
-    margin-left: 100px;
-  }
-  .collapse-button .downup img{
-    transform: rotate(180deg);
-    width: 32px;
-    height: 32px;
-    margin-left: 0px;
-  }
+
 
   @media screen and (max-width: 375px){
+    .container-logement{
+        max-width: 335px;
+        width:100%;
+        margin-top: 50px;
+    }
     .localisation{
-        width: 335px;
-        margin: 0px;
+        max-width: 335px;
+        width:100%;
+        margin-left: 0px;
+        height: 73px;
     }
     .top-right{
         flex-direction: column;
-        width: 100%;
-        max-width: 335px;
-        height: 515px;
     }
     .localisation h1{
+        height: 46px;
     font-size: 18px;
     line-height: 26px;
     text-align: left;
-    width:335px;
-    height:46px;
+    max-width:335px;
+    width:100%;
     }
     .localisation p{
-    font-size: 14px;
-    line-height: 20px;
-    text-align: left;
-    width:323px;
-    height:22px;
-    margin-top:25px;
-    }
-    .tags{
-        position: relative;
-        width: 335px;
-    }
-    .tags li{
-        font-size: 10px;
-    line-height: 11px;
-    }
-    .tags ul{
-        width: 335px;
-        position: relative;
-        margin-left: 20px;
-        right: 130px;
+       max-width: 323px;
+        width:100%;
+        height: 22px;
+        margin-top: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
     }
     .hote-heart{
-        width: 335px;
-        margin-left: 0px;
         display: flex;
-        margin-top: 90px;
-        flex-direction: row-reverse;
-        height: 33px;
+    max-width: 335px;
+    width:100%;
+    height: 33px;
+    flex-direction: row-reverse;
+    margin-top: 90px;
     }
-    .host-details img{
-        width: 32px;
-        height: 32px;
+    .host-details img {
+        max-width:32px;
+        width:100%;
+        height:32px;
     }
     .host-details h2{
-    font-size: 12px;
+        font-size: 12px;
     line-height: 17px;
-    text-align: right;
-    padding-top: 10px;
+    text-align: end;
+    max-width: 93px;
+    width:100%;
+    height: 33px;
+    margin-top: 25px;
+    padding-right: 5px;
     }
     .host-details{
-        width: 135px;
-        height: 33px;
+        max-width: 135px;
+        width:100%;
+    height: 33px;
+    flex-direction: row;
     }
-    .collapse-body{
-        width: 335px;
-        margin-left: 0px;
-        position: relative;
-        bottom: 420px;
-        flex-direction: column;
+    .tags{
+        width: 100%;
+        max-width: 335px;
     }
-    .collapse-body .collapse{
-        width: 335px;
+    .tags ul{
+        max-width: 335px;
+        width:100%;
+    position: relative;
+    right: 100px;
     }
-    .collapse .collapse-content{
-    font-size: 12px;
-    line-height: 17px;
-    text-align: left;
+    .tags li{
+        max-width: 84px;
+        width:100%;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
     }
+
   }
   

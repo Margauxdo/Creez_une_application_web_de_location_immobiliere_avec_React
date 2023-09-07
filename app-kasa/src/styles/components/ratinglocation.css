@@ -11,10 +11,11 @@
         max-width: 98px;
         height: 18px;
         position: relative;
-        right: 50px;
+        right: 51px;
     }
     .rating-location svg{
-        width:18px;
+        max-width:18px;
         height:18px;
+        width:100%;
     }
 }

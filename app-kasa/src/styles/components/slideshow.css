@@ -1,50 +1,116 @@
-.carousel .control-next.control-arrow:before {
-    border-left: 15px solid #fff;
-    position: relative;
-    float: right;
+/* Styles pour les chevrons de navigation personnalisés */
+.carousel-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 24px; /* Taille de la police pour les chevrons */
+    color: #fff; /* Couleur du texte des chevrons */
+    cursor: pointer;
+    padding: 0;
+    width: 40px; /* Largeur des chevrons */
+    height: 40px; /* Hauteur des chevrons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.carousel .carousel-status {
-    position: relative;
-    width: 1240px;
-    padding: 0px;
-    height: 0px;
+
+/* Styles pour les chevrons personnalisés (chevrons vides avec deux barres) */
+.carousel-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    margin-right: 5px; /* Espacement entre les chevrons et les chiffres de pagination */
+}
+.pagination{
     color: #fff;
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+}
+.carousel.carousel-slider{
+    z-index: 1;
+}
+.control-dots .dot.selected, .carousel .control-dots .dot:hover {
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    
+}
+.carousel .control-dots .dot {
+    opacity: 0;
+    filter: alpha(opacity=30);
+    display: block;
+    margin: 0px;
+}
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    width: 250px;
 }
 .carousel .slide img {
-    max-width: 1240px;
+    width: 100%;
     vertical-align: top;
     border: 0;
-    width: 100%;
-    position: relative;
-    margin-left: 0px;
-    height: 415px;
-}
-.slider-wrapper ul {
-    transform: translate3d(0px, 0px, 0px);
-    transition-duration: 350ms;
     max-width: 1240px;
-    width: 100%;
     height: 415px;
-    justify-content: flex-start;
+    object-fit: cover;
 }
-
+.carousel .control-next.control-arrow:before {
+    border-left: 45px solid #fff;
+}
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    margin: 0 15px;
+    display: inline-block;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    content: '';
+    padding: 0 15px;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 45px solid #fff;
+}
 @media screen and (max-width: 375px){
-
+    .carousel .control-next.control-arrow:before {
+        border-left: 17px solid #fff;
+    }
+    .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+        margin: 0 0px;
+        display: inline-block;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+    }
+    .carousel .slider.animated{
+        max-width:335px;
+        width:100%;
+    }
+    .carousel.carousel-slider .control-arrow {
+        max-width:32px;
+        width:100%;
+    }
+    .carousel .control-prev.control-arrow:before {
+        border-right: 15px solid #fff;
+    }
     .carousel .slide img{
-        max-width: 335px;
-        width: 200%;
-        height: 255px;
-    }
-    .carousel-root {
-        max-width: 335px;
-    margin-left: 0px;
-    height: 255px;
     width: 100%;
-    }
-    .carousel.carousel-slider{
+    vertical-align: top;
+    border: 0;
     max-width: 335px;
-    margin-left: 0px;
     height: 255px;
-    width: 100%;
+    object-fit: cover;
 }
-    }
+
+}

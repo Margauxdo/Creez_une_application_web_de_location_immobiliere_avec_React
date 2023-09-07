@@ -1,17 +1,24 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-/* Slideshow.js */
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../styles/components/slideshow.css';
 
 const Slideshow = ({ images }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  
+
+const handleSlideChange = (index) => {
+    setCurrentPage(index + 1);
+  };
   return (
     <div>
       <Carousel
         showArrows={true} // Affiche les flèches de navigation
         showThumbs={false} // Cache les indicateurs de page en dessous
-        showStatus={true} // Cache le numéro d'image en cours
+        showStatus={false} // Afficher le numéro d'image en cours
+        onChange={handleSlideChange}
       >
         {images.map((image, index) => (
           <div key={index}>
@@ -19,6 +26,7 @@ const Slideshow = ({ images }) => {
           </div>
         ))}
       </Carousel>
+      <div className="pagination">{currentPage} / {images.length}</div>
     </div>
   );
 };

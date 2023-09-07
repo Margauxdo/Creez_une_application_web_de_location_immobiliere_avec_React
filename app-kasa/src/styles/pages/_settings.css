@@ -12,12 +12,20 @@
     /*height: 1024px;*/
     
 }
+#root {
+  max-width: 1440px;
+    width: 100%;
+}
 
 @media screen and (max-width: 375px){
    *{
     max-width: 375px;
    /*height: 812px;*/
    }
+   #root {
+    max-width: 375px;
+      width: 100%;
+  }
 }
 
 
