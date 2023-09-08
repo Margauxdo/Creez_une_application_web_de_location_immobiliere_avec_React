@@ -15,8 +15,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         {/*path='*'fonctionne si url ne correspondt a aucun chemin déclaré*/}
-        <Route path='*' element={<Erreur404 />} />
-        <Route path="/property/:id" element={<FicheLogement />} />
+        <Route path="*" element={<Erreur404 />} />
+        <Route path="/logement/:id" element={<FicheLogement />} />
       </Routes>
 
       <Footer/>

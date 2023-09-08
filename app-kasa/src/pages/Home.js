@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
-import LogoFooter from '../components/LogoFooter';
+
 import Banner from '../components/Banner';
 import Card from '../components/Card';
 
@@ -23,7 +23,7 @@ const Home = () => {
                 <Card/>
             </div>
                 
-            <LogoFooter/>
+            
         </div>
     );
 };

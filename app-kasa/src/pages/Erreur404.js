@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
-import LogoFooter from '../components/LogoFooter';
+
 import { Link } from 'react-router-dom';
 import '../styles/components/erreur404.css';
 
@@ -25,7 +25,7 @@ const Erreur404 = () => {
                 <Link to='/'>Retourner sur la page d'accueil</Link>
                 </div >
             </div>
-               <LogoFooter/>
+               
         </div>
     );
 };

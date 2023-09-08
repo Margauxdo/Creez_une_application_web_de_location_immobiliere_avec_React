@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
-import LogoFooter from '../components/LogoFooter';
 import ImgApropos from '../components/ImgApropos';
 import Collapse from '../components/Collapse';
 
@@ -32,7 +31,7 @@ const APropos = () => {
                 </Collapse>
             </div>
 
-                <LogoFooter/>
+             
         </div>
         
     );

@@ -9,6 +9,7 @@ import Collapse from '../components/Collapse';
 import Slideshow from '../components/Slideshow'; // Importez votre composant Slideshow
 import ChevronDownUp from '../components/ChevronDownUp';
 import RatingLocation from '../components/RatingLocation';
+import Erreur404 from './Erreur404';
 
 const FicheLogement = () => {
   const { id } = useParams(); // Utilisez useParams pour obtenir l'ID depuis les paramètres d'URL
@@ -19,20 +20,10 @@ const FicheLogement = () => {
   console.log('Logement correspondant :', logement);
 
   if (!logement) {
-    // Gérez le cas où l'ID n'a pas été trouvé en affichant un message d'erreur
+    // cas où l'ID n'a pas été trouvé on affiche la page d'erreur
     return (
-      <div>
-        <div className='nav'>
-          <Logo />
-          <Navigation />
-        </div>
-        <div className='container-logement'>
-          <h1>Logement non trouvé</h1>
-          <p className='description'>Ce logement n'existe pas.</p>
-        </div>
-        <LogoFooter />
-      </div>
-    );
+    <Erreur404/>
+    )
   }
 
   // Si le logement est trouvé, affichez les détails du logement
@@ -44,14 +35,10 @@ const FicheLogement = () => {
       </div>
       <div className='container-logement'>
         <div className='entete'>
-         {/*} <img src={logement.cover} alt={logement.title} />*/}
          
         <Slideshow images={logement.pictures} />
         </div>
 
-        
-
-        {/* Le reste de votre code reste inchangé */}
         <div className="top-right">
           <div className='localisation'>
             <h1>{logement.title}</h1>
