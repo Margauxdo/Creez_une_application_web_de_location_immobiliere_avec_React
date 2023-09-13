@@ -1,31 +1,31 @@
-import '../pages/FicheLogement';
 import React from 'react';
 import '../styles/components/ratinglocation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'; // Importez l'icône d'étoile vide
+
 
 const RatingLocation = ({ rating }) => {
-  // Arrondissez la note à l'entier le plus proche
-  const roundedRating = Math.round(rating);
+  const activeStars = Math.min(5, Math.max(0, Math.floor(rating)));
+  const inactiveStars = 5 - activeStars;
 
-  // Créez un tableau de 5 étoiles
-  const stars = Array(5).fill(null).map((_, index) => {
-    if (index < roundedRating) {
-      return <FontAwesomeIcon key={index} icon={faStar} className="fas fa-star" />;
-    } else {
-      return <FontAwesomeIcon key={index} icon={faStarEmpty} className="far fa-star" />;
-    }
-  });
+  const activeStarIcons = Array(activeStars).fill(null).map((_, index) => (
+    <FontAwesomeIcon key={index} icon={faStar} className="fas fa-star" />
+  ));
+
+  const inactiveStarIcons = Array(inactiveStars).fill(null).map((_, index) => (
+    <FontAwesomeIcon key={index} icon={faStar} className="far fa-star" />
+  ));
 
   return (
     <div className="rating-location">
-      {stars}
+      {activeStarIcons}
+      {inactiveStarIcons}
     </div>
   );
 };
 
 export default RatingLocation;
+
 
 
 

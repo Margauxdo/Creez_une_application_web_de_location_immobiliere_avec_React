@@ -6,13 +6,13 @@ import LogoFooter from '../components/LogoFooter';
 import Logo from '../components/Logo';
 import '../styles/components/fichelogement.css';
 import Collapse from '../components/Collapse';
-import Slideshow from '../components/Slideshow'; // Importez votre composant Slideshow
+import Slideshow from '../components/Slideshow'; 
 import ChevronDownUp from '../components/ChevronDownUp';
 import RatingLocation from '../components/RatingLocation';
 import Erreur404 from './Erreur404';
 
 const FicheLogement = () => {
-  const { id } = useParams(); // Utilisez useParams pour obtenir l'ID depuis les paramètres d'URL
+  const { id } = useParams(); // Utilisez useParams pour obtenir l'ID 
   console.log('ID extrait des paramètres d\'URL :', id);
 
   // Recherchez le logement correspondant dans logementsData

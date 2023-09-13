@@ -3,6 +3,15 @@
     display: flex;
     float: right;
 }
+/* Pour les étoiles solides (faStar) */
+.fas.fa-star {
+    color:#FF6060; 
+}
+
+/* Pour les étoiles vides (faStarEmpty) */
+.far.fa-star {
+    color: #E3E3E3; /* Couleur de l'étoile vide */
+}
 
 
 @media screen and (max-width: 375px){
