@@ -2,15 +2,6 @@
     width: 100%;
     max-width: 1240px;
     object-fit: cover;
-}
-.pagination {
-    
-   
-    font-variant-numeric: tabular-nums; /* Utilise la numérotation tabulaire */
-        font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
-        color: #fff; /* Couleur du texte de la numérotation */
-        text-align: center;
-        margin-top: 10px; /* Marge supérieure pour espacement */
     }
 .localisation h1{
     font-family: Montserrat;

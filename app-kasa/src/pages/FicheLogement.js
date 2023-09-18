@@ -2,7 +2,7 @@ import React from 'react';
 import logementsData from '../logements.json';
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
-import LogoFooter from '../components/LogoFooter';
+
 import Logo from '../components/Logo';
 import '../styles/components/fichelogement.css';
 import Collapse from '../components/Collapse';
@@ -76,7 +76,7 @@ const FicheLogement = () => {
           </Collapse>
         </div>
       </div>
-      <LogoFooter />
+      
     </div>
   );
 }

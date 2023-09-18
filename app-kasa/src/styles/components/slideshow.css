@@ -1,116 +1,76 @@
-/* Styles pour les chevrons de navigation personnalisés */
-.carousel-arrow {
-    background-color: transparent;
-    border: none;
-    font-size: 24px; /* Taille de la police pour les chevrons */
-    color: #fff; /* Couleur du texte des chevrons */
-    cursor: pointer;
-    padding: 0;
-    width: 40px; /* Largeur des chevrons */
-    height: 40px; /* Hauteur des chevrons */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-/* Styles pour les chevrons personnalisés (chevrons vides avec deux barres) */
-.carousel-arrow::before {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #fff;
-    margin-right: 5px; /* Espacement entre les chevrons et les chiffres de pagination */
+.carousel-root{
+    outline: none;
+    max-width: 100%;
+    width: 1240px;
+    margin-left: 100px;
+    height: 100%;
 }
-.pagination{
+.carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    max-width: 100%;
+    width: 1240px;
+    height: 415px;
+}
+.carousel .carousel-status {
+    position: absolute;
+    top: 357px;
     color: #fff;
-    margin-top: 10px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
-    position: relative;
-    z-index: 2;
-    bottom: 50px;
 }
-.carousel.carousel-slider{
-    z-index: 1;
-}
-.control-dots .dot.selected, .carousel .control-dots .dot:hover {
-    opacity: 0;
-    z-index: 0;
-    position: absolute;
-    
-}
-.carousel .control-dots .dot {
-    opacity: 0;
-    filter: alpha(opacity=30);
-    display: block;
-    margin: 0px;
+.carousel .slider-wrapper {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    transition: height .15s ease-in;
 }
 .carousel.carousel-slider .control-arrow {
-    top: 0;
+    top: 0px;
     color: #fff;
     font-size: 26px;
     bottom: 0;
     margin-top: 0;
     padding: 5px;
-    width: 250px;
 }
-.carousel .slide img {
-    width: 100%;
-    vertical-align: top;
-    border: 0;
-    max-width: 1240px;
-    height: 415px;
-    object-fit: cover;
+
+/* Styles pour les flèches du carrousel */
+.control-arrow.control-prev,
+.control-arrow.control-next {
+  background-color: transparent; /* Fond transparent */
+  border: 2px solid #fff; /* Contour de la flèche */
+  border-top: none; /* Supprimer le contour supérieur */
+  border-bottom: none; /* Supprimer le contour inférieur */
+  width: 60px; /* Largeur de la flèche */
+  height: 60px; /* Hauteur de la flèche */
+  position: absolute; /* Position absolue */
+  top: 50%; /* Aligner au centre vertical */
+  transform: translateY(-50%); /* Ajuster la position verticale */
+  font-size: 20px; /* Taille de la flèche */
+  cursor: pointer; /* Curseur de la flèche */
 }
-.carousel .control-next.control-arrow:before {
-    border-left: 45px solid #fff;
+
+.control-arrow.control-prev {
+  left: 10px; /* Position à gauche pour aller à gauche */
 }
-.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
-    margin: 0 15px;
-    display: inline-block;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    content: '';
-    padding: 0 15px;
+
+.control-arrow.control-next {
+  right: 10px; /* Position à droite pour aller à droite */
 }
-.carousel .control-prev.control-arrow:before {
-    border-right: 45px solid #fff;
-}
+
+
+
+
+
 @media screen and (max-width: 375px){
-    .carousel .control-next.control-arrow:before {
-        border-left: 17px solid #fff;
-    }
-    .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
-        margin: 0 0px;
-        display: inline-block;
-        border-top: 13px solid transparent;
-        border-bottom: 13px solid transparent;
-    }
-    .carousel .slider.animated{
-        max-width:335px;
-        width:100%;
-    }
-    .carousel.carousel-slider .control-arrow {
-        max-width:32px;
-        width:100%;
-    }
-    .carousel .control-prev.control-arrow:before {
-        border-right: 15px solid #fff;
-    }
-    .carousel .slide img{
-    width: 100%;
-    vertical-align: top;
-    border: 0;
-    max-width: 335px;
-    height: 255px;
-    object-fit: cover;
-}
+
 
 }
