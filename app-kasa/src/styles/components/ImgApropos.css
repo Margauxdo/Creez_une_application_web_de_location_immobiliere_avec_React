@@ -18,8 +18,12 @@
 }
 @media screen and (max-width: 375px){
 .img-apropos{
-    margin-top: 50px;
+    margin-top: auto;
     margin-left: 0px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
 }
 .Img-banner img{
     max-width: 336px;

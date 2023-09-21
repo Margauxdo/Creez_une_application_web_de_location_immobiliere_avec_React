@@ -1,0 +1,16 @@
+/* Styles pour la flèche précédente */
+.custom-prev-arrow {
+    font-size: 240px; /* Taille de la flèche */
+    color: red; /* Couleur de la flèche */
+    cursor: pointer; /* Curseur au survol */
+}
+
+/* Styles pour la flèche suivante */
+.custom-next-arrow {
+    position: absolute;
+    font-size: 240px; /* Taille de la flèche */
+    color: red; /* Couleur de la flèche */
+    cursor: pointer; /* Curseur au survol */
+}
+
+  

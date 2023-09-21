@@ -1,19 +1,22 @@
 .title404 h1{
-font-family: Montserrat;
-font-size: 288px;
-font-weight: 700;
-line-height: 411px;
-letter-spacing: 0em;
-text-align: center;
-margin-top:173px;
-max-width: 1440px;
-width: 100%;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 173px;
+    max-width: 1440px;
+    width: 100%;
+    height: 263px;
+    display: flex;
+    justify-content: center;
 }
 .title404{
     max-width: 597px;
     height: 263px;
-    margin-left: 432px;
-    width:100%;
+    margin: auto;
+    width: 100%;
 }
 .text404 p{
     font-family: Montserrat;
@@ -21,14 +24,16 @@ width: 100%;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
 }
 .text404{
     width: 100%;
-    max-width: 872px;
+    max-width: 1240px;
     height: 51px;
-    margin-left: 295px;
     margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .returnHome a{
     font-family: Montserrat;
@@ -37,14 +42,12 @@ width: 100%;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    max-width: 284px;
-    color:#ff6060;
+    color: #ff6060;
+    display: flex;
+    justify-content: center;
 }
 .returnHome{
-    width:100%;
-    max-width: 284px;
     height:26px;
-    margin-left: 578px;
     margin-top:209px;
 }
 
@@ -54,48 +57,37 @@ width: 100%;
         font-size: 96px;
         font-weight: 700;
         line-height: 137px;
-        max-width: 374px;
         width: 100%;
         height: 99px;
         text-align: center;
     }
     .title404{
         margin-left: 0px;
-        margin-top: 262px;
+        margin: auto;
         width: 100%;
-        max-width: 375px;
     }
     .text404{
-        max-width: 375px;
         width: 100%;
     }
     .text404 p{
         font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 26px;
-        max-width: 260px;
-        width:100%;
-        height:52px;
-        position: absolute;
-        top: 427px;
-        left: 80px;
-        margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 260px;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    top: 357px;
+    left: 45px;
+    margin-top: 30px;
+    margin: auto;
     }
     .returnHome a{
         font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
     }
     .returnHome{
-        margin-left: 0px;
-        position: absolute;
-        top: 430px;
-        width: 100%;
-        max-width: 375px;
-        left: 75px;
+        margin: auto;
     }
     
 }
