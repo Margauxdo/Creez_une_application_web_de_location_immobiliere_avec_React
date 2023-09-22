@@ -42,10 +42,6 @@
     position: relative;
     background-color:#FF6060;
     border-radius: 10px;
-      
-      
-
-
 }
 .list-logement{
     padding-bottom: 56px;
@@ -67,15 +63,18 @@
     border-radius: 10px;
 }
 
+
+
+
 @media screen and (max-width: 375px) {
     .card-logements{
         max-width: 335px;
-    width: 100%;
-    margin: auto;
-    background: none;
-    margin-top: 0px;
-    align-items: center;
-    justify-content: center;
+        width: 100%;
+        margin: auto;
+        background: none;
+        margin-top: 0px;
+        align-items: center;
+        justify-content: center;
     }
     .card-logements img{
         border-radius: 10px;
@@ -90,14 +89,12 @@
         margin-bottom: 26px;
         width: 100%;
         max-width: 335px;
-    }
-      
+    }  
     .logement-card h2{
         margin-top: 188px;
         margin-left: 19.7px;
-       max-width: 295px;
-        width:100%;
-        
+        max-width: 295px;
+        width:100%; 
       }  
       .logement-card::before{
         max-width: 335px;

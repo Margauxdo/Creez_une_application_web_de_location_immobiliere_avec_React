@@ -12,18 +12,18 @@
 }
 .titlebanner{
   font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 68px;
-    letter-spacing: 0em;
-    text-align: left;
-    position: relative;
-    color: #fff;
-    z-index: 2;
-    bottom: 189px;
-    max-width: 705px;
-    width: 100%;
-    left: 373px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  bottom: 189px;
+  max-width: 705px;
+  width: 100%;
+  left: 373px;
 }
 .banner{
   position: relative; 

@@ -46,27 +46,22 @@
     color:#FF6060;
 }
 .collapse-chevron {
-    
     color: #ffffff;
-    font-size:32px;
-    
+    font-size:32px; 
 }
-
 .collapse-chevron.up::before {
     content: '\f077'; /* Code de l'icône FontAwesome pour le chevron vers le haut */
     font-family: 'Font Awesome 5 Free'; 
 }
-
 .collapse-chevron.down::before {
     content: '\f078'; /* Code de l'icône FontAwesome pour le chevron vers le bas */
 }
-
 .collapse-body{
     display: flex;
     width: 100%;
     max-width: 1240px;
     position: relative;
-    margin-top: 125px;
+    margin-top: 65px;
     justify-content: space-between;
 }
 .collapse-body .collapse-button{
@@ -91,10 +86,32 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-
+    margin-top: 15px;
 }
 .list-equipement{
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.collapse-button .downup img{
+    transform: rotate(180deg);
+    width: 32px;
+    height: 32px;
+}
+.collapse-button .downup{
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+}
+.downup img{
+    height: 0px;
 }
 
 
@@ -108,52 +125,54 @@
     }
     .collapse-button{
         max-width: 335px;
-    width: 100%;
-    height: 30px;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 19px;
-    margin-left: 0px;
-    display: flex;
-    align-items: center;
+        width: 100%;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0px;
     }
     .collapse-content{
-
         font-size: 12px;
         font-weight: 400;
         line-height: 17px;
         margin-left: 0px;
         max-width: 335px;
         width:100%;
-    height: 143px;
     }
     .collapse .collapse-button {
         margin-left: 0px;
     }
     .collapse-body .collapse-button{
-    font-size: 13px;
-    line-height: 19px;
-    text-align: left;
-    max-width: 335px;
-    width:100%;
-    height: 29px;
-    padding-top: 5px;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: left;
+        max-width: 335px;
+        width:100%;
+        height: 29px;
+        padding-top: 5px;
     }
     .collapse-body{
-        margin-top: 0px;
-    flex-direction: column;
+        margin-top: 20px;
+        flex-direction: column;
     }
     .collapse-body .collapse-content{
         font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    max-width: 335px;
-    width:100%;
-    height: 153px;
-    margin-left: 0px;
-
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 335px;
+        width:100%;
+        height: 153px;
+        margin-left: 0px;
+    }
+    .collapse-button .downup {
+        bottom: 0px;
     }
 }

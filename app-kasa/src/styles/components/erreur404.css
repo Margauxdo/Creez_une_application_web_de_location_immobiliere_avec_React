@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 115px;
 }
 .returnHome a{
     font-family: Montserrat;
@@ -68,20 +69,20 @@
     }
     .text404{
         width: 100%;
+        margin: auto;
     }
     .text404 p{
         font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    max-width: 260px;
-    width: 100%;
-    height: 52px;
-    position: absolute;
-    top: 357px;
-    left: 45px;
-    margin-top: 30px;
-    margin: auto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        max-width: 260px;
+        width: 100%;
+        height: 52px;
+        position: absolute;
+        top: 357px;
+        margin-top: 30px;
+        margin: auto;
     }
     .returnHome a{
         font-size: 14px;

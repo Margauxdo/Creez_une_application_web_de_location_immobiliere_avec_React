@@ -1,40 +1,33 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../styles/components/slideshow.css';
 
 const Slideshow = ({ images }) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
 
-  const handleSlideChange = (index) => {
-    setCurrentPage(index + 1);
+  const handleNextSlide = () => {
+    setCurrentPage((prevPage) => (prevPage + 1) % images.length);
   };
 
-  const statusFormatter = (current, total) => {
-    return `${current} / ${total}`;
+  const handlePrevSlide = () => {
+    setCurrentPage((prevPage) => (prevPage - 1 + images.length) % images.length);
   };
+
+  const currentImageNumber = currentPage + 1;
 
   return (
     <div className="custom-slideshow-container">
-      <Carousel
-        showArrows={true}
-        showThumbs={false}
-        showStatus={true}
-        statusFormatter={statusFormatter}
-        showIndicators={false}
-        onChange={handleSlideChange}
-        className='custom-carousel'
-        selectedItem={currentPage - 1}
-      >
-        {images.map((image, index) => (
-          <div key={index} className='custom-slide'>
-            <img src={image} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </Carousel>
+      <div className='custom-slide'>
+        <img src={images[currentPage]} alt={`Image ${currentImageNumber}/${images.length}`} />
+      </div>
+      <div className="custom-controls">
+        <button onClick={handlePrevSlide}>Précédent</button>
+        <span className="image-number">{`${currentImageNumber}/${images.length}`}</span>
+        <button onClick={handleNextSlide}>Suivant</button>
+      </div>
     </div>
   );
 };
 
 export default Slideshow;
+

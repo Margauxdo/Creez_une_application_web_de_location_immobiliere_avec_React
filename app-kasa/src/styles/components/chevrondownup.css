@@ -6,8 +6,8 @@
     transition: transform 0.3s ease;
     margin-top: 2px;
     display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
 }
 
 
@@ -20,7 +20,7 @@
         height: 18px;
         margin-left: 0px;
     }
-.downup{
-    max-width: 335px;
+    .downup{
+        max-width: 335px;
 }
 }

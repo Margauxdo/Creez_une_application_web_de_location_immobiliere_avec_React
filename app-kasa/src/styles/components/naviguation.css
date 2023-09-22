@@ -1,13 +1,13 @@
 .nav{
   justify-content: center;
-    max-width: 1240px;
-    width: 100%;
-    display: flex;
-    height: 68px;
-    position: relative;
-    flex-wrap: nowrap;
-    padding-top: 40px;
-    padding-left: 100px;
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  height: 68px;
+  position: relative;
+  flex-wrap: nowrap;
+  padding-top: 40px;
+  padding-left: 100px;
 }
 .navigation a{
   text-decoration: none;
@@ -15,7 +15,6 @@
 }
 .navigation ul{
   display: flex;
-  width: 309px;
   width: 140px;
   justify-content: center;
   float: right;
@@ -31,9 +30,7 @@
   text-align: right;
   position: relative;
   width: 136px;
-
 }
-
 .navigation li::after {
   content: "";
   position: absolute;
@@ -44,11 +41,9 @@
   transform: scaleX(0); 
   transition: transform 0.3s ease; 
 }
-
 .navigation li:active::after {
   transform: scaleX(1); 
 }
-
 .navigation li:active::after {
   border-bottom: 1px solid #FF6060; 
   width:100%;
@@ -80,11 +75,8 @@
   margin: auto;
   margin-bottom: 40px;
 }
-
-
 .navigation li{
   width: 71px;
-
 }
 .navigation a{
   text-transform: uppercase;

@@ -6,7 +6,6 @@
     border-radius: 25px;
     background-blend-mode: darken;
     filter: brightness(70%);
-
 }
 .img-apropos{
     margin-left: 100px;
@@ -16,6 +15,10 @@
     width: 100%;
     max-width: 1240px;
 }
+
+
+
+
 @media screen and (max-width: 375px){
 .img-apropos{
     margin-top: auto;
