@@ -26,9 +26,8 @@ p{
     text-align: left;
 }
 .localisation{
-    width: 635px;
+    max-width: 635px;
     height: 77px;
-    margin-left: 100px;
 }
 .host-details{
     display: flex;
@@ -38,7 +37,6 @@ p{
     justify-content: flex-end;
 }
 .host-details h2{
-    max-width: 93px;
     width:100%;
     height: 52px;
     font-family: Montserrat;
@@ -63,12 +61,6 @@ p{
 .hote-heart{
     max-width: 605px;
     width: 100%;
-    margin-top: 15px;
-}
-
-.rating-location{
-    max-width: 605px;
-    width:100%;
     margin-top: 15px;
 }
 .rating-location p{
@@ -102,13 +94,71 @@ p{
 }
 .tags{
     width: 1240px;
-
+    position: relative;
+    top: 10px;
 }
 .container-logement{
     margin-top: 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.localisation{
+    width: 50%;
+}
+.top-right{
+    max-width: 924px;
+    width: 100%;
+}
+.hote-heart{
+    width:50%;
+}
+.localisation h1{
+    font-size: 28px;
+    width: 550px;
+}
+.host-details{
+    width: 300px;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+}
 
-
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.top-right{
+    max-width: 700px;
+}
+.localisation{
+    max-width: 350px;
+    height: 110px;
+    margin-left: 0px;
+}
+.localisation h1{
+    font-size: 23px;
+}
+.hote-heart, .host-details{
+    max-width: 250px;
+}
+.host-details img{
+    max-width: 47px;
+    height: 47px;
+    margin-right: 0px;
+}
+.host-details h2{
+    height: 47px;
+    font-size: 16px;
+    width: 45px;
+    margin-right: 0px;
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+}
+.localisation p{
+    font-size: 16px;
+}
+.tags li{
+    width: 120px;
+    font-size: 12px;
+}
+}
 
 
   @media screen and (max-width: 375px){

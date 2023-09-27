@@ -9,6 +9,25 @@
     max-width: 1440px;
     width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.logofooter{
+    padding-top: 66px;
+    padding-left: 450px;
+    max-width: 1024px;
+    width: 100%;
+}
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.logofooter{
+    padding-top: 66px;
+    padding-left: 309px;
+    max-width: 765px;
+    width: 100%;
+}
+}
+
 
 @media screen and (max-width: 375px){
     .logofooter{

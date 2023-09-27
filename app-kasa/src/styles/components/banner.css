@@ -3,7 +3,6 @@
   width: 100%;
   height: 223px;
   object-fit: cover;
-  margin-left: 100px;
   border-radius: 25px;
   background-blend-mode: darken;
   filter: brightness(70%);
@@ -20,13 +19,11 @@
   position: relative;
   color: #fff;
   z-index: 2;
-  bottom: 189px;
+  bottom: 155px;
   max-width: 705px;
   width: 100%;
-  left: 373px;
 }
 .banner{
-  position: relative; 
   max-width: 1240px;
   width: 100%;
 }
@@ -35,7 +32,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1240px;
+  max-width: 1240px;
   height: 223px;
   background: linear-gradient( rgb(0 0 0 / 0%), rgb(0 0 0 / 15%));
   z-index: 1;
@@ -46,6 +43,34 @@
   height: 223px;
   position: relative;
   margin-top: 98px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.banner{
+  max-width: 924px;
+  margin: auto;
+}
+.titlebanner{
+  font-size: 44px;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.banner-home{
+  max-width: 700px;
+  margin-top: 50px;
+}
+.titlebanner{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.banner img{
+  max-width: 700px;
+  height: 180px;
+  margin-top: 25px;
+
+}
 }
 
 
@@ -72,8 +97,8 @@
     max-width: 217px;
     width:100%;
     height: 48px;
-    bottom: 100px;
-    left: 36px;
+    bottom: 85px;
+    right: 40px;
   }
   .banner-home{
     max-width: 335px;

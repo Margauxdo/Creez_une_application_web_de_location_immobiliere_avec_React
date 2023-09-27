@@ -19,7 +19,28 @@
   margin-left: 463px;
 }
  
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.container-footer p{
+  margin-left: auto;
+  font-size: 20px;
+}
+.logofooter{
+  padding-left: 450px;
+}
+}
 
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.container-footer p{
+  margin-left: auto;
+  font-size: 16px;
+}
+.logofooter{
+  padding-top: 66px;
+  padding-left: 319px;
+  max-width: 767px;
+  width: 100%;
+}
+}
 
 
   @media screen and (max-width: 375px) {

@@ -24,11 +24,11 @@
 
 .collapse{
     width: 100%;
-    max-width: 1023px;
+    margin-top: 0px;
 }
 .collapse-content{
     width: 100%;
-    max-width: 1240px;
+    max-width: 1023px;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
@@ -61,13 +61,12 @@
     width: 100%;
     max-width: 1240px;
     position: relative;
-    margin-top: 65px;
     justify-content: space-between;
+    top: 70px;
 }
 .collapse-body .collapse-button{
-    width: 582px;
+    max-width: 582px;
     height: 52px;
-    margin-left: 100px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -75,10 +74,11 @@
     letter-spacing: 0em;
     text-align: left;
     padding-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 45px;
 }
 .collapse-body .collapse-content{
     width: 582px;
-    margin-left: 100px;
     height: 249px;
     font-family: Montserrat;
     font-size: 18px;
@@ -86,7 +86,10 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 35px;
+    margin-left: 0px;
+    position: relative;
+    bottom: 65px;
 }
 .list-equipement{
     list-style-type: none;
@@ -104,16 +107,85 @@
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: normal;
     align-items: center;
-    position: relative;
-    bottom: 25px;
-    right: 10px;
+    width: 50px;
 }
 .downup img{
     height: 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.collapse{
+    max-width: 924px;
+}
+.collapse-button{
+    max-width: 924px;
+    margin-left: auto;
+    font-size: 20px;
+}
+.collapse-content{
+    max-width: 924px;
+    margin-left: auto;
+    font-size: 20px;
+}
+.collapse-body .collapse{
+    max-width: 400px;
+    
+}
+.collapse-body .collapse-button{
+    font-size: 16px;
+}
+.custom-slideshow-container{
+    max-width: 924px;
+}
+.collapse-body .collapse-content{
+    max-width: 400px;
+    font-size: 16px;
+}
+}
 
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.collapse, .collapse-button, .collapse-content{
+    max-width: 700px;
+    margin-left: auto;
+}
+.collapse-button, .collapse-content{
+    font-size: 15px;
+}
+.collapse-body{
+    max-width: 700px;
+    top: 50px;
+}
+.collapse-body .collapse-button{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+.collapse-body{
+    flex-direction: column;
+    position: relative;
+    top: 45px;
+    max-width: 700px;
+}
+.collapse-body .collapse-content{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
+    height: 153px;
+    margin-left: 0px;
+    padding-top: 50px;
+}
+}
 
 
 @media screen and (max-width: 375px){
@@ -122,6 +194,7 @@
         width: 100%;
         max-width: 335px;
         margin: auto;
+        
     }
     .collapse-button{
         max-width: 335px;
@@ -146,33 +219,33 @@
     }
     .collapse .collapse-button {
         margin-left: 0px;
-    }
-    .collapse-body .collapse-button{
-        font-size: 13px;
-        line-height: 19px;
-        text-align: left;
-        max-width: 335px;
-        width:100%;
-        height: 29px;
-        padding-top: 5px;
-    }
-    .collapse-body{
-        margin-top: 20px;
-        flex-direction: column;
+    height: 37px;
+    font-size: 13px;
+    padding-bottom: 10px;
     }
     .collapse-body .collapse-content{
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 17px;
-        letter-spacing: 0em;
-        text-align: left;
-        max-width: 335px;
-        width:100%;
-        height: 153px;
-        margin-left: 0px;
+        font-size: 13px;
     }
+    .collapse-body{
+        width: 100%;
+    max-width: 375px;
+    position: relative;
+    justify-content: space-between;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+
     .collapse-button .downup {
         bottom: 0px;
+    }
+    .collapse-button .downup img{
+        max-width: 18px;
+        width: 100%;
+        height: 18px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        left: 110px;
     }
 }

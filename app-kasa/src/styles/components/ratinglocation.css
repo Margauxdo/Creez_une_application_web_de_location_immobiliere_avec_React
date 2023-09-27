@@ -1,22 +1,52 @@
-.rating-location .rating-location{
-    width:196px;
-    display: flex;
-}
 /* Pour les étoiles solides (faStar) */
 .fas.fa-star {
     color:#FF6060; 
+    height: 36px;
+    width: 36px;
 }
 /* Pour les étoiles vides (faStarEmpty) */
 .far.fa-star {
     color: #E3E3E3; /* Couleur de l'étoile vide */
+    height: 36px;
+    width: 36px;
+}
+.rating-location {
+    width: 196px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.rating-location{
+    width: 150px;
+    justify-content: flex-start;
+}
+.fas.fa-star, .far.fa-star{
+    width: 30px;
+    height: 30px;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .fas.fa-star, .far.fa-star{
+        width:25px;
+        height:25px
+    }
+    .rating-location{
+        width:150px
+    }
 }
 
 
 @media screen and (max-width: 375px){
     .rating-location{
-        width: 100%;
-        height: 18px;
-    }
+        justify-content: flex-start;
+    display: flex;
+    align-self: end;
+}
+    
     .rating-location svg{
         max-width:18px;
         height:18px;

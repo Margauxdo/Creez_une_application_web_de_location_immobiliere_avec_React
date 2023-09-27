@@ -2,6 +2,21 @@
     width: 210.32154846191406px;
     height: 68px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+.logo img{
+    width: 195px;
+    height: 65px;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+.logo img{
+    width: 165px;
+    height: 55px;
+}
+}
+
 @media screen and (max-width: 375px){
    .logo img{
     width: 100%;
