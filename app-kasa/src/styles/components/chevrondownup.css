@@ -10,7 +10,9 @@
     justify-content: flex-start;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .collapse-button .downup img {
         transform: rotate(180deg);
         width: 32px;
@@ -18,7 +20,7 @@
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
     collapse-button .downup img {
         transform: rotate(180deg);
         width: 28px;
@@ -26,7 +28,13 @@
     }
 }
 
-
+@media screen and (min-width: 376px) and (max-width:425px){
+  .collapse-button .downup img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+}
 
 @media screen and (max-width: 375px){
     .collapse-button .downup img {

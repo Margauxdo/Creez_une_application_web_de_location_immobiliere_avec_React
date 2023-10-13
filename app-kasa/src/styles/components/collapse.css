@@ -114,17 +114,17 @@
 .downup img{
     height: 0px;
 }
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 .collapse{
-    max-width: 924px;
+    max-width: 750px;
 }
 .collapse-button{
-    max-width: 924px;
+    max-width: 760px;
     margin-left: auto;
     font-size: 20px;
 }
 .collapse-content{
-    max-width: 924px;
+    max-width: 760px;
     margin-left: auto;
     font-size: 20px;
 }
@@ -134,17 +134,24 @@
 }
 .collapse-body .collapse-button{
     font-size: 16px;
+    max-width: 360px;;
 }
 .custom-slideshow-container{
-    max-width: 924px;
+    max-width: 760px;
 }
 .collapse-body .collapse-content{
-    max-width: 400px;
+    max-width: 360px;
     font-size: 16px;
+}
+.collapse-body{
+    max-width: 760px;
+    width:100%;
 }
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
 .collapse, .collapse-button, .collapse-content{
     max-width: 700px;
     margin-left: auto;
@@ -187,6 +194,48 @@
 }
 }
 
+@media screen and (min-width: 376px) and (max-width:425px){
+  .collapse-button{
+    margin:0px;
+  }
+  .collapse{
+    max-width: 366px;
+    width: 100%;
+    margin: auto;
+  }
+  .collapse .collapse-button{
+    margin-left: 0px;
+    height: 37px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+  }
+  .collapse-content{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 0px;
+    max-width: 360px;
+    width: 100%;
+    margin-top: 35px;
+  }
+  .collapse-body{
+    max-width: 466px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .collapse-body .collapse-content{
+    font-size: 14px;
+    padding-top: 40px;
+  }
+  .container-logement .collapse-body{
+    position: relative;
+    top: 30px;
+  }
+}
+
 
 @media screen and (max-width: 375px){
 
@@ -219,12 +268,14 @@
     }
     .collapse .collapse-button {
         margin-left: 0px;
-    height: 37px;
-    font-size: 13px;
-    padding-bottom: 10px;
+        height: 37px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding-top: 0px;
     }
     .collapse-body .collapse-content{
         font-size: 13px;
+        height: 180px;
     }
     .collapse-body{
         width: 100%;

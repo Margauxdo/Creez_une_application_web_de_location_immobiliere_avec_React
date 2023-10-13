@@ -10,11 +10,10 @@
 }
 .navigation a{
   text-decoration: none;
-  margin-right: 65px;
 }
 .navigation ul{
   display: flex;
-  width: 140px;
+  width: 180px;
   justify-content: space-between;
 }
 .navigation li{
@@ -46,11 +45,14 @@
   border-bottom: 1px solid #FF6060; 
   width:100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
 .nav{
   width: 100%;
-  max-width: 924px;
+  max-width: 760px;
 }
+
 .navigation a{
   margin-right:auto;
 }
@@ -59,28 +61,64 @@
   width: 95px;
   margin-left: 50px;
 }
+.navigation ul{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
 }
  
   
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
 .nav{
-  max-width: 700px;
+  max-width: 667px;
+  width: 100%;
 }
 .navigation li{
   font-size: 18px;
     display: flex;
     justify-content: flex-start;
+    width:100px
 }
 .navigation ul{
   display: flex;
-    justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.navigation{
+  max-width: 300px;
+  width: 100%;
+  margin: 0px;
 }
 .navigation a{
   margin-right: 0px;
 }
 }
   
-  
+@media screen and (min-width: 376px) and (max-width:425px){
+  .nav{
+    justify-content: center;
+    max-width: 360px;
+    width: 100%;
+  }
+  .navigation ul{
+    position: relative;
+    top: 15px;
+    justify-content: start;
+    width: 125px;
+    margin-right: 78px;
+  }
+  .navigation a{
+    margin-right: 0px;
+    text-transform: uppercase;
+  }
+  .navigation li{
+    position: relative;
+    width: 86px;
+    font-size: 14px;
+  }
+}  
 
 
   @media screen and (max-width: 375px){

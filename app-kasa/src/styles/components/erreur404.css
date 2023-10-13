@@ -52,20 +52,24 @@
     margin-top:209px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 .title404 h1{
-    max-width: 924px;
     font-size: 250px;
 }
 .text404 p{
     font-size: 30px;
+    max-width: 768px;
 }
-.text404 {
-    max-width: 924px;
+.text404{
+    max-width: 768px;
+    width: 100%;
+
 }
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
 .title404 h1{
     font-size: 200px;
     margin-top: 100px;
@@ -78,6 +82,25 @@
 .text404 p{
     font-size: 25px;
 }
+}
+
+@media screen and (min-width: 376px) and (max-width:425px){
+  .title404 h1{
+    font-size: 102px;
+    max-width: 376px;
+  }
+  .text404 p{
+    font-size: 22px;
+    max-width: 376px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .text404{
+    max-width: 376px;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 375px){

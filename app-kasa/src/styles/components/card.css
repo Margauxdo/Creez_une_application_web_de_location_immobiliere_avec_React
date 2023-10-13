@@ -1,7 +1,7 @@
 .card-logements{
     width: 100%;
     max-width: 1240px;
-    margin-left: 100px;
+    
     border-radius: 25px;
     background-color: #F6F6F6;
     margin-top:37px;
@@ -62,37 +62,105 @@
     z-index: 1;
     border-radius: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 .list-logement{
-    max-width: 924px;
+    max-width: 768px;
     display: contents;
 }
 .card-logements{
-    max-width: 924px;
+    max-width: 768px;
     margin: auto;
     margin-top: 40px;
     padding-bottom: 50px;
 
 }
+.logement-card{
+    max-width: 320px;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 26px;
+}
+.logement-card::before{
+    width: 100%;
+    max-width: 420px;
+}
+.logement-card img{
+    width: 100%;
+    max-width: 420px;
+}
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
 .card-logements{
-    max-width: 700px;
-    margin-left: auto;
+    max-width: 667px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .logement-card{
-    max-width: 300px;
-    height: 250px;
-    margin-top: 56px;
-    margin-left: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .logement-card h2{
     max-width: 95%;
     margin-left: auto;
 }
+.list-logement{
+    max-width: 767px;
+    width: 100%;
+    display: contents;
+}
+.logement-card img{
+    width: 100%;
+    max-width: 600px;
+}
+.logement-card::before{
+    max-width: 600px;
+    width: 100%;
+}
 }
 
+
+@media screen and (min-width: 376px) and (max-width:425px){
+  .card-logements{
+    max-width: 425px;
+    width: 100%;
+    margin: 0px;
+  }
+  .logement-card{
+    max-width: 366px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .logement-card::before{
+    width: 100%;
+    max-width: 366px;
+  }
+  .logement-card img{
+    width: 100%;
+    max-width: 366px;
+  }
+  .logement-card h2{
+    margin-left: 15px;
+    width: 100%;
+    margin-top: 278px;
+  }
+  .list-logement{
+    padding-bottom: 56px;
+    z-index: 0;
+    width: 100%;
+    max-width: 366px;
+    margin: 0px;
+  }
+}
 
 
 @media screen and (max-width: 375px) {

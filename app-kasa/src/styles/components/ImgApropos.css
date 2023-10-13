@@ -15,18 +15,29 @@
     max-width: 1240px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
 .Img-banner{
-    max-width: 924px;
+    max-width: 760px;
 }
 }
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
 .Img-banner{
     max-width: 700px;
 }
 }
 
+@media screen and (min-width: 376px) and (max-width:425px){
+  .Img-banner{
+    width: 100%;
+    max-width: 360px;
+  }
+  .img-apropos{
+    margin-top: 50px;
+  }
+}
 
 @media screen and (max-width: 375px){
 .img-apropos{
