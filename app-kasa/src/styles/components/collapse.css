@@ -114,6 +114,32 @@
 .downup img{
     height: 0px;
 }
+
+@media screen and (min-width: 993px) and (max-width: 1420px) {
+    .collapse{
+        max-width: 993px;
+        width: 100%;
+    }
+    .collapse-button{
+        max-width: 993px;
+        width: 100%;
+    }
+    .collapse-button, .collapse-content{
+        max-width: 993px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .collapse-body{
+        max-width: 993px;
+        width: 100%;
+    }
+    .collapse-body .collapse-button, .collapse-body .collapse-content{
+        max-width: 482px;
+    width: 100%;
+    }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 .collapse{
     max-width: 750px;

@@ -52,6 +52,22 @@
     margin-top:209px;
 }
 
+
+
+@media screen and (min-width: 993px) and (max-width: 1420px) {
+    .text404{
+        max-width: 993px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .text404 p{
+        max-width: 990px;
+        width: 100%;
+        margin: 0px;
+        font-size: 33px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 .title404 h1{
     font-size: 250px;

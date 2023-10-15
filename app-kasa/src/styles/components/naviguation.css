@@ -46,6 +46,13 @@
   width:100%;
 }
 
+@media screen and (min-width: 993px) and (max-width: 1420px) {
+  .nav{
+    max-width: 993px;
+    width: 100%;
+  }
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 .nav{

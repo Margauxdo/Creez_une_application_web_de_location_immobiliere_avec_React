@@ -18,6 +18,14 @@
   margin-top: 34px;
   margin-left: 463px;
 }
+
+@media screen and (min-width: 993px) and (max-width: 1420px) {
+  .container-footer p{
+    width: 100%;
+    max-width: 993px;
+    margin-left: 0px;
+  }
+}
  
 @media screen and (min-width: 768px) and (max-width: 992px) {
 .container-footer p{

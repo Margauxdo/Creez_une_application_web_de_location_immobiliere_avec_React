@@ -44,6 +44,17 @@
   font-size: 80px;
 }
 
+@media screen and (min-width: 993px) and (max-width: 1420px) {
+  .custom-slide{
+    max-width: 993px;
+    width: 100%;
+  }
+  .custom-controls{
+    max-width: 993px;
+  }
+  
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 .custom-slide img{
