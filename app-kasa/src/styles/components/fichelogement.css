@@ -106,6 +106,16 @@ p{
         max-width: 993px;
         width: 100%;
     }
+    .container-logement{
+        margin-top: 60px;
+        max-width: 993px;
+        width: 100%;
+    }
+    .tags{
+        max-width: 993px;
+        width: 100%;
+    
+    }
 }
 
 

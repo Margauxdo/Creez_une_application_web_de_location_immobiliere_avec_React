@@ -21,9 +21,9 @@ const Slideshow = ({ images }) => {
         <img src={images[currentPage]} alt={`Image ${currentImageNumber}/${images.length}`} />
       </div>
       <div className="custom-controls">
-        <button onClick={handlePrevSlide}><i class="fa-solid fa-chevron-left"></i></button>
+        <button onClick={handlePrevSlide}><i className="fa-solid fa-chevron-left"></i></button>
         <span className="image-number">{`${currentImageNumber}/${images.length}`}</span>
-        <button onClick={handleNextSlide}><i class="fa-solid fa-chevron-right"></i></button>
+        <button onClick={handleNextSlide}><i className="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   );
