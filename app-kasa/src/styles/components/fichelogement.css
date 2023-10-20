@@ -32,7 +32,6 @@ p{
 .host-details{
     display: flex;
     align-items: center;
-    width: 605px;
     flex-direction: unset;
     justify-content: flex-end;
 }
