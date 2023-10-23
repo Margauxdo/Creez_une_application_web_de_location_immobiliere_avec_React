@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
-    collapse-button .downup img {
+    .collapse-button .downup img {
         transform: rotate(180deg);
         width: 28px;
         height: 28px;
@@ -44,8 +44,6 @@
         transform: rotate(180deg);
         max-width: 18px;
         margin-left: 5px;
-    }
-    .downup{
-        max-width: 335px;
+    
 }
 }

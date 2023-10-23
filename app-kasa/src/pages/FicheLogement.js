@@ -2,7 +2,6 @@ import React from 'react';
 import logementsData from '../logements.json';
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
-
 import Logo from '../components/Logo';
 import '../styles/components/fichelogement.css';
 import Collapse from '../components/Collapse';
@@ -10,6 +9,8 @@ import Slideshow from '../components/Slideshow';
 import ChevronDownUp from '../components/ChevronDownUp';
 import RatingLocation from '../components/RatingLocation';
 import Erreur404 from './Erreur404';
+
+
 
 const FicheLogement = () => {
   const { id } = useParams(); // Utilisez useParams pour obtenir l'ID 

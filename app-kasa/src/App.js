@@ -27,4 +27,3 @@ const App = () => {
 
 export default App;
 
-//creer un router//
