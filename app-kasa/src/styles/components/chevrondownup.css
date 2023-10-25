@@ -43,7 +43,7 @@
     .collapse-button .downup img {
         transform: rotate(180deg);
         max-width: 18px;
-        margin-left: 5px;
+        margin-left: 0px;
     
 }
 }
