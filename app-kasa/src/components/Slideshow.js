@@ -5,15 +5,19 @@ import '../styles/components/slideshow.css';
 const Slideshow = ({ images }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
+
   const handleNextSlide = () => {
     setCurrentPage((prevPage) => (prevPage + 1) % images.length);
   };
+
 
   const handlePrevSlide = () => {
     setCurrentPage((prevPage) => (prevPage - 1 + images.length) % images.length);
   };
 
+
   const currentImageNumber = currentPage + 1;
+  
 
   return (
     <div className="custom-slideshow-container">

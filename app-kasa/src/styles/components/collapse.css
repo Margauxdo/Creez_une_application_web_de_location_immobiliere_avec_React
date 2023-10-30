@@ -1,3 +1,9 @@
+.collapse .collapse-title{
+    width:200px;
+}
+.description .collapse-title{
+    width:50px;
+}
 .collapse-button{
     background-color: #FF6060;
     border: 0px;
@@ -21,6 +27,7 @@
     z-index: 1;
 
 }
+
 
 .collapse{
     width: 100%;
@@ -79,7 +86,7 @@
 }
 .collapse-body .collapse-content{
     width: 582px;
-    height: 249px;
+    height: 310px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;

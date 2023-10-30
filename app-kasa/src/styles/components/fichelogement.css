@@ -269,7 +269,7 @@ p{
     justify-content: flex-end;
     position: relative;
     top: 20px;
-    left: 90px;
+    left: 110px;
 }
 .host-details h2{
     width: 30px;
@@ -361,6 +361,7 @@ p{
         height: 33px;
         flex-direction: row;
         margin-top: 25px;
+        margin-left: 80px;
     }
     .tags{
         width: 100%;
