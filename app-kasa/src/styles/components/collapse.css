@@ -280,16 +280,15 @@
     }
     .collapse-button{
         max-width: 335px;
-        width: 100%;
-        height: 30px;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 19px;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        top: 0px;
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 20px;
+    align-items: center;
+    position: relative;
+    top: 0px;
     }
     .collapse-content{
         font-size: 12px;
@@ -327,9 +326,9 @@
         max-width: 18px;
         width: 100%;
         height: 18px;
-        margin: auto;
+        margin: 0px;
         display: flex;
         position: relative;
-        left: 110px;
+        right: 10px;
     }
 }

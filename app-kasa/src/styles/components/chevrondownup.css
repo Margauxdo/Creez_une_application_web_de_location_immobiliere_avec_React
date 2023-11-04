@@ -42,8 +42,13 @@
 @media screen and (max-width: 375px){
     .collapse-button .downup img {
         transform: rotate(180deg);
-        max-width: 18px;
-        margin-left: 0px;
-    
+    }
+.collapse-button .downup{
+    max-width: 18px;
+    width: 100%;
+    display: flex;
+    margin:0px;
+    justify-content: flex-start;
+
 }
 }
