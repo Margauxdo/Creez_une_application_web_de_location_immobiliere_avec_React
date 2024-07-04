@@ -1,8 +1,8 @@
-#Créez une application web de location immobilière avec React
+# Créez une application web de location immobilière avec React
 
-# Kasa vous recrute en tant que développeur front-end en freelance
+Kasa vous recrute en tant que développeur front-end en freelance
 
-![Image d'une chambre d'hôtel avec le logo de Kasa](image_url)
+
 
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
